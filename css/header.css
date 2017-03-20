@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+.header{
+	background: url(../image/header_bg.jpg) no-repeat;
+	min-width: 1100px;
+	height: 121px;
+}
+.header .logo{
+	
+	float: left;
+	margin-right: 158px;
+}
+.header .Nav-wrap .nav_fir{
+	width: 90px;
+	height: 40px;
+	float: left;
+	margin-left: 22px;
+	position: relative;
+	z-index: 999;
+	margin-top: 45px;
+	
+}
+.header .Nav-wrap .nav_fir ul{
+	position: absolute;
+	left: -30px;
+	display: none;
+}
+.header .Nav-wrap .nav_fir li{
+	color: #fff;
+	width: 180px;
+	height: 34px;
+	font-size: 16px;
+	font-family: "华文楷体";
+	line-height:34px;
+	background:#36264a;
+	cursor: pointer;
+	text-align:center;
+	
+	
+}
+.header .Nav-wrap .nav_fir li:hover{
+	background:#3498db url(../image/nav_li_bg.png) no-repeat 165px 15px;
+	padding-left:5px;
+	transition: padding-left 0.4s ease 0s;
+	color: #fff;
+	
+}
+.header .Nav-wrap .nav_fir h1{
+	display: block;
+	font-size: 16px;
+	color: #fff;
+	height: 40px;
+	width: 80px;
+	font-family: "华文楷体";
+	text-align: center;
+	position: relative;
+	padding:0 15px;
+	cursor:pointer;
+	
+}
+.header .Nav-wrap .nav_fir h1 img{
+	position: absolute;
+	top:-3px;
+	width:25px;
+	height:25px;
+	margin-left:5px;
+	
+}
+.header .Nav-wrap .nav_fir h1:hover{
+	background: url(../image/nav_now_bg.png) no-repeat bottom center;
+	
+}
+.now h1{
+	background: url(../image/nav_now_bg.png) no-repeat bottom center;
+}

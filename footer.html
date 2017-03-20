@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/common.css"/>
+		<link rel="stylesheet" href="css/footer.css" />
+		
+		
+		<script src="js/jquery-1.8.3.min.js"></script>
+	</head>
+	<body>
+		<div class="footer_wrap">
+			<div class="footer">
+				<div class="music">
+					<span></span>
+					
+					<span style="background:url(image/yinyue_lai.png);"></span>
+					<span style="background:url(image/yinyue_mi.png);"></span>
+					<span style="background:url(image/yinyue_fa.png);"></span>
+					<span style="background:url(image/yinyue_suo.png);"></span>
+					<span style="background:url(image/yinyue_la.png);"></span>
+					<span style="background:url(image/yinyue_xi.png);"></span>
+					
+				</div>
+				<div class="music_content">
+					
+				</div>
+				<div class="shenmin" id="beiaishenmin">蜀ICP备16001214</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		$(function(){
+			var musicindex=0;
+			$(".music").find("span").click(function(){
+				musicindex++;
+				index=$(this).index();
+				if(navigator.appName=="Microsoft Internet Explorer"){
+					$("body").append('<bgsound class="mysudio'+musicindex+'"src="music/sound0'+index+'.mp3" autostart=true loop=false></bgsound>')
+				}else if(navigator.userAgent.indexOf("Firefox")>0){
+					$("body").append('<object class="myaudio'+musicindex+'"data="music/sound0'
+					+index+'.mp3" type="application/x-mplayer2" width="0" height="0">'+
+					'<param name="src" value="music/sound0'+index+'.mp3">'+
+					'<param name="autostart" value="1">'+
+					'<param nname="playcount" value="infinite">'+'</object>')
+				}else{
+					$("body").append('<embed class="myaudio' +musicindex+'"src="music/sound0'+
+					index+'.mp3" autostart="" loop="false" hidden="true" ></embed>');
+				}
+				var removeindex=musicindex;
+				setTimeout(function(){
+					$(".myaudio"+removeindex).remove();
+				},3000);
+			});
+			$("#beiaishenmin").click(function(){
+				window.open("http://www.miitbeian.gov.cn");
+			})
+		})
+	</script>
+</html>

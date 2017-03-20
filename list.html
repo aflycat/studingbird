@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="css/common.css"rel="stylesheet" />
+		<link href="css/list.css"  rel="stylesheet"/>
+		<script src="../landj/js/jquery-1.8.3.min.js"></script>
+		<script src="js/listData.js"/></script>
+		<script src="js/list.js"></script>
+		<script src="js/scrollTOP.js"></script>
+		
+	</head>
+	<body>
+		<!--头部-->
+		<div id="header" style="height: 120px; background: #332347;"></div>
+		<div class="content_wrap">
+			<h1 class="title_big">小鸟小鸟</h1>
+			<h2>about bird</h2>
+			<img src="image/three_points01.png" />
+			
+			<h1 class="title_list">列表<span class="pen"></span></h1>
+			<div class="list_content" id="articlelist">
+				<div class="content_one">
+					<img class="list_img_over_xiaojiantou" src="image//list_img_over_xiaojiantou.png" />
+					<div class="img_wrap"><img src="image/list_img01.jpg"/></div>
+					<div class="content_text">
+						<div class="title_small">王子牛奶哈哈哈哈</div>
+						<div class="date">2015-12-21</div>
+						<p>发发发啊大发发 阿达 啊啊发阿道夫阿道夫阿达发啊舒服撒 啊啊发啊</p>
+					</div>
+				</div>
+				<div class="content_one">
+					<div class="img_wrap"><img src="image/list_img02.jpg"/></div>
+					<div class="content_text">
+						<div class="title_small">王子牛奶哈哈哈哈</div>
+						<div class="date">2015-12-21</div>
+						<p>发发发啊大发发 阿达 啊啊发阿道夫阿道夫阿达发啊舒服撒 啊啊发啊</p>
+					</div>
+					<img class="list_img_over_xiaojiantou" src="image//list_img_over_xiaojiantou.png" />
+				</div>
+				<div class="content_one">
+					<img class="list_img_over_xiaojiantou" src="image//list_img_over_xiaojiantou.png" />
+					<div class="img_wrap"><img src="image/list_img03.jpg"/></div>
+					<div class="content_text">
+						<div class="title_small">王子牛奶哈哈哈哈</div>
+						<div class="date">2015-12-21</div>
+						<p>发发发啊大发发 阿达 啊啊发阿道夫阿道夫阿达发啊舒服撒 啊啊发啊</p>
+					</div>
+					<img class="list_img_over_xiaojiantou" src="image//list_img_over_xiaojiantou.png" />
+				</div>
+				<div class="content_one">
+					<div class="img_wrap"><img src="image/list_img04.jpg"/></div>
+					<div class="content_text">
+						<div class="title_small">王子牛奶哈哈哈哈</div>
+						<div class="date">2015-12-21</div>
+						<p>发发发啊大发发 阿达 啊啊发阿道夫阿道夫阿达发啊舒服撒 啊啊发啊</p>
+					</div>
+					<img class="list_img_over_xiaojiantou" src="image//list_img_over_xiaojiantou.png" />
+				</div>
+				
+			</div>
+			<img style="margin-top:30px auto 0" src="image/list_gomore_bg.jpg" />
+			<div class="list_more" id="listmore"></div>
+		</div>
+		
+		
+		<!--模块-->
+		<div id="itemHtml" style="display: none;">
+			<div class="content_one" articleid="$articleId$">
+				<div class="img_wrap">
+					<img src="$articleCover$" /></div>
+					<div class="content_text">
+						<div class="title_small">$articleTitle$</div>
+						<div class="date">$updateTime$</div>
+						<p>$describle$</p>
+					</div>	
+					<img class="list_content" src="image/list_img_over_xiaojiantou.png" />
+				</div>
+			</div>
+		</div>
+		<!--内容和底部相接-->
+		
+		
+		<div class="link_footer_img"></div>
+		
+		
+		<div id="footer"></div>
+		
+		<div class="fixed_tip" id="scrollTop_wrap">
+			<div class="scroll_top" id="scrollTop"></div>
+			<div class="fixed_contactus"></div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			$("#header").load("header.html")
+			$("#footer").load("footer.html")
+		})
+		
+		
+	</script>
+</html>
